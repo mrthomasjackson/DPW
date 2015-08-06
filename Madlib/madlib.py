@@ -110,27 +110,35 @@ star_wars = '''
 
 # Asking if the user likes star wars or family guy
 like_family_guy = raw_input("Do you like Family Guy? (yes or no): ")
+# If they like family guy... roll tape
 if like_family_guy == "yes":
     family_guy = family_guy.format(**locals())
     print family_guy
+# If they do not, pass
 else:
     pass
 
-
+# Asking user if user likes star wars
 like_star_wars = raw_input("Do you like Star Wars? (yes or no): ")
+
+# If Yes... roll tape
 if like_star_wars == "yes":
     star_wars = star_wars.format(**locals())
     print star_wars
+# If not... pass
 else:
     pass
 
+# If they dont like either, ask them to please try again
 if like_family_guy and like_star_wars == "no":
     print "Your no fun... Why don't you re-run the script and choose Star Wars or Family Guy (or BOTH)..."
 
+# Start birthday session
 print "Oh! Before I forget!"
 birthday_yet = raw_input("Have you celebrated your birthday yet this year? (yes or no) ")
 print "Hmmmm... Let me think... "
 
+# Calculate how many years old user is
 if birthday_yet == "no":
     my_years -= 1
 else:
@@ -138,17 +146,13 @@ else:
 
 print "You must be... Hang on, let me count"
 
+# While loop to show the logic
 i = 0
 while i < my_years:
     print i
     i += 1
 
+# Display the age to use
 print str(i) + " years old!"
 
-
-
-
-
-
-
-
+# END THAT'S ALL FOLKS!
