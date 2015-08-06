@@ -116,7 +116,7 @@ if like_family_guy == "yes":
     print family_guy
 # If they do not, pass
 else:
-    pass
+    print "Too Bad..."
 
 # Asking user if user likes star wars
 like_star_wars = raw_input("Do you like Star Wars? (yes or no): ")
@@ -127,7 +127,7 @@ if like_star_wars == "yes":
     print star_wars
 # If not... pass
 else:
-    pass
+    print "Too Bad..."
 
 # If they dont like either, ask them to please try again
 if like_family_guy and like_star_wars == "no":
