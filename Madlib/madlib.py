@@ -46,7 +46,29 @@ battles_won = numerical_classroom(number_questions[0], numerical_classroom[1], n
 like_star_wars = raw_input("Do you like Star Wars? (yes or no): ")
 like_family_guy = raw_input("Do you like Family Guy? (yes or no): ")
 
-star_wars = '''
+# Play stories based on which user likes
+if like_family_guy == "yes":
+    family_guy = '''
+It seems today
+That all you see
+Is violence in movies
+And sex on T.V
+
+But where are those good old-fashioned values....
+
+On which we used to rely?!
+
+Lucky there's a family guy!
+Lucky there's a man who
+Positively can do
+All the things that make us...
+
+Laugh and cry!
+
+He's a Fam-ily Guyyy!
+'''
+elif like_star_wars == "yes":
+    star_wars = '''
 A long time ago, in a galaxy far,
 far away....
 
@@ -72,24 +94,9 @@ stolen plans that can save
 her people and restore
 freedom to the galaxy....
 '''
+elif like_family_guy and like_star_wars == "no":
+    print "Your no fun... Why don't you re-run the script and choose Star Wars or Family Guy (or BOTH)..."
 
-family_guy = '''
-It seems today
-That all you see
-Is violence in movies
-And sex on T.V
 
-But where are those good old-fashioned values....
 
-On which we used to rely?!
-
-Lucky there's a family guy!
-Lucky there's a man who
-Positively can do
-All the things that make us...
-
-Laugh and cry!
-
-He's a Fam-ily Guyyy!
-'''
 
