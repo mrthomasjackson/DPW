@@ -20,6 +20,7 @@ dictionary["nouns"].append(raw_input("Let's hear a girls name: "))
 dictionary["verbs"].append(raw_input("What is your favorite physical activity? "))
 dictionary["verbs"].append(raw_input("Say something crazy! "))
 
+
 # Add user input to the number array
 number_questions.append(raw_input("How many countries have you traveled to? "))
 number_questions.append(raw_input("What year were you born? "))
@@ -51,7 +52,7 @@ if like_family_guy == "yes":
     family_guy = '''
 It seems today
 That all you see
-Is violence in movies
+Is {dictionary[nouns[2]]} in movies
 And sex on T.V
 
 But where are those good old-fashioned values....
@@ -67,6 +68,9 @@ Laugh and cry!
 
 He's a Fam-ily Guyyy!
 '''
+    family_guy = family_guy.format(**locals())
+    print family_guy
+    
 elif like_star_wars == "yes":
     star_wars = '''
 A long time ago, in a galaxy far,
