@@ -50,21 +50,21 @@ family_guy = '''
 *************************************************
 >>>It seems today
 >>>That all you see
->>>Is {dictionary[nouns][3]} in {dictionary[nouns][1]}
+>>>Is {dictionary[nouns][3]}s in {dictionary[nouns][0]}
 >>>And {dictionary[verbs][1]} on T.V
 >>>
 >>>But where are those good old-fashioned values....
 >>>
 >>>On which we used to rely?!
 >>>
->>>Lucky there's a {dictionary[nouns][3]}!
->>>Lucky there's a man who
+>>>Lucky there's a {dictionary[nouns][2]}!
+>>>Lucky there's a {dictionary[nouns][2]} who
 >>>Positively can do
 >>>All the things that make us...
 >>>
 >>>{dictionary[verbs][0]} and cry!
 >>>
->>>He's a {dictionary[nouns][3]}!
+>>>He's a {dictionary[nouns][2]}!
 *************************************************
 *************************************************
 *************************************************
@@ -77,18 +77,18 @@ star_wars = '''
 *************************************************
 *************************************************
 *************************************************
->>>A long time ago ({number_questions[1]} years ago), in a {dictionary[nouns][0]} far,
+>>>A long time ago ({years_ago} years ago), in a {dictionary[nouns][0]} far,
 >>>far away....
 >>>
 >>>It is a period of civil war.
->>>Rebel {dictionary[nouns][1]}, striking
+>>>Rebel {dictionary[nouns][1]}s, striking
 >>>from a hidden base, have won
->>>their first victory against
+>>>their {battles_won} victory against
 >>>the evil {dictionary[nouns][2]}.
 >>>
 >>>During the battle, rebel
 >>>spies managed to steal secret
->>>plans to the {dictionary[nouns][2]} ultimate weapon,
+>>>plans to {dictionary[nouns][2]}'s ultimate weapon,
 >>>the {dictionary[nouns][3]},
 >>>an armored {dictionary[nouns][4]}
 >>>with enough power to
@@ -100,7 +100,7 @@ star_wars = '''
 >>>starship, custodian of the
 >>>stolen plans that can save
 >>>her people and restore
->>>freedom to the {dictionary[nouns][1]}....
+>>>freedom to the {dictionary[nouns][0]}....
 *************************************************
 *************************************************
 *************************************************
@@ -124,6 +124,8 @@ else:
 
 if like_family_guy and like_star_wars == "no":
     print "Your no fun... Why don't you re-run the script and choose Star Wars or Family Guy (or BOTH)..."
+
+print "Oh! Before I forget! Have you had a birthday this year? "
 
 
 
