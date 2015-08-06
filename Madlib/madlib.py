@@ -3,9 +3,13 @@ __author__ = 'tjackson'
 # Initiate Dictionary
 dictionary = dict()
 
+# Create Dictionary to hold nouns and verbs
 dictionary = {"nouns": [], "verbs": []}
+
+# Create array to hold number values
 number_questions = []
 
+# Add user input to the dictionary
 dictionary["nouns"].append(raw_input("Name a place: "))
 dictionary["nouns"].append(raw_input("Name a type of car: "))
 dictionary["nouns"].append(raw_input("Who is your favorite super-villain? "))
@@ -16,10 +20,15 @@ dictionary["nouns"].append(raw_input("Let's hear a girls name: "))
 dictionary["verbs"].append(raw_input("What is your favorite physical activity? "))
 dictionary["verbs"].append(raw_input("Say something crazy! "))
 
+# Add user input to the number array
 number_questions.append(raw_input("How many countries have you traveled to? "))
 number_questions.append(raw_input("What year were you born? "))
 number_questions.append(raw_input("What is your favorite number? "))
 
+# Function to create an equation with output "years_ago"
+def numerical_playground(x,y):
+    years_ago = x * y
+    return years_ago
 
 
 
