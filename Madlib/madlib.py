@@ -25,14 +25,28 @@ number_questions.append(raw_input("How many countries have you traveled to? "))
 number_questions.append(raw_input("What year were you born? "))
 number_questions.append(raw_input("What is your favorite number? "))
 
-# Function to create an equation with output "years_ago"
+# Function to create an equation with output
 def numerical_playground(x,y):
-    years_ago = x * y
-    return years_ago
+    z = x * y
+    return z
 
+# Assign returned value from numerical_playground to "years_ago"
+years_ago = numerical_playground(number_questions[0], number_questions[1])
 
+# Create a second function to handle math formula
+def numerical_classroom(x,y,z):
+    a = x * z
+    b = y / a
+    return b
 
-'''
+# Assign returned value from numerical_classroom to "battles_won"
+battles_won = numerical_classroom(number_questions[0], numerical_classroom[1], number_questions[2])
+
+# Asking if the user likes star wars or family guy
+like_star_wars = raw_input("Do you like Star Wars? (yes or no): ")
+like_family_guy = raw_input("Do you like Family Guy? (yes or no): ")
+
+star_wars = '''
 A long time ago, in a galaxy far,
 far away....
 
@@ -57,5 +71,25 @@ starship, custodian of the
 stolen plans that can save
 her people and restore
 freedom to the galaxy....
+'''
+
+family_guy = '''
+It seems today
+That all you see
+Is violence in movies
+And sex on T.V
+
+But where are those good old-fashioned values....
+
+On which we used to rely?!
+
+Lucky there's a family guy!
+Lucky there's a man who
+Positively can do
+All the things that make us...
+
+Laugh and cry!
+
+He's a Fam-ily Guyyy!
 '''
 
