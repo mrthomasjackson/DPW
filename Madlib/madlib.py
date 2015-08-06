@@ -25,6 +25,8 @@ number_questions.append(raw_input("How many countries have you traveled to? "))
 number_questions.append(raw_input("What year were you born? "))
 number_questions.append(raw_input("What is your favorite number? "))
 
+my_years = 2015 - int(number_questions[1])
+
 # Function to create an equation with output
 def numerical_playground(x,y):
     z = int(x) * int(y)
@@ -125,7 +127,27 @@ else:
 if like_family_guy and like_star_wars == "no":
     print "Your no fun... Why don't you re-run the script and choose Star Wars or Family Guy (or BOTH)..."
 
-print "Oh! Before I forget! Have you had a birthday this year? "
+print "Oh! Before I forget!"
+birthday_yet = raw_input("Have you celebrated your birthday yet this year? (yes or no) ")
+print "Hmmmm... Let me think... "
+
+if birthday_yet == "no":
+    my_years -= 1
+else:
+    pass
+
+print "You must be... Hang on, let me count"
+
+i = 0
+while i < my_years:
+    print i
+    i += 1
+
+print str(i) + " years old!"
+
+
+
+
 
 
 
