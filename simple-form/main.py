@@ -6,16 +6,21 @@ Simple Form
 '''
 import webapp2
 
+# Class habdles the webpage
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+        # assign the PageView class to variable
         p = PageView()
+        # if statement to check if form has been filled (looking for get method in URL)
         if self.request.GET:
+            # assigning form elements to variables
             name = self.request.GET['name']
             email = self.request.GET['email']
             phone = self.request.GET['phone']
             contact_method = self.request.GET['contact_method']
             time_of_day = self.request.GET['time_of_day']
             comment = self.request.GET['comment']
+            # 
             self.response.write(p.page_head + p.form_results % (name, email, phone, contact_method, time_of_day, comment) + p.page_close)
         else:
             self.response.write(p.page_head + p.page_form + p.page_close)
@@ -35,7 +40,7 @@ class PageView(object):
 <fieldset>
 
 <!-- Form Name -->
-<legend>Choose Your Team and World</legend>
+<legend>Contact Us</legend>
 
 <!-- Text input-->
 <div class="form-group">
@@ -124,27 +129,27 @@ class PageView(object):
         <div class="list-group">
             <div class="list-group-item">
                 <h4 class="list-group-item-heading">Name: </h4>
-                <p class="list-group-item-text">%s</p>
+                <p class="list-group-item-text"><strong>%s</strong></p>
             </div>
             <div class="list-group-item">
                 <h4 class="list-group-item-heading">Email: </h4>
-                <p class="list-group-item-text">%s</p>
+                <p class="list-group-item-text"><strong>%s</strong></p>
             </div>
             <div class="list-group-item">
                 <h4 class="list-group-item-heading">Phone: </h4>
-                <p class="list-group-item-text">%s</p>
+                <p class="list-group-item-text"><strong>%s</strong></p>
             </div>
             <div class="list-group-item">
                 <h4 class="list-group-item-heading">Best Contact Method:</h4>
-                <p class="list-group-item-text">%s</p>
+                <p class="list-group-item-text"><strong>%s</strong></p>
             </div>
             <div class="list-group-item">
-                <h4 class="list-group-item-heading">Best Time to Reach You</h4>
-                <p class="list-group-item-text">%s</p>
+                <h4 class="list-group-item-heading">Best Time to Reach You: </h4>
+                <p class="list-group-item-text"><strong>%s</strong></p>
             </div>
             <div class="list-group-item">
-                <h4 class="list-group-item-heading">Additional Comments</h4>
-                <p class="list-group-item-text">%s</p>
+                <h4 class="list-group-item-heading">Additional Comments: </h4>
+                <p class="list-group-item-text"><strong>%s</strong></p>
             </div>
         </div>
     </div>
