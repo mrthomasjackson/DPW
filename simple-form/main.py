@@ -16,7 +16,7 @@ class MainHandler(webapp2.RequestHandler):
             contact_method = self.request.GET['contact_method']
             time_of_day = self.request.GET['time_of_day']
             comment = self.request.GET['comment']
-            self.response.write(p.page_head + p.form_results + p.page_close)
+            self.response.write(p.page_head + p.form_results % (name, email, phone, contact_method, time_of_day, comment) + p.page_close)
         else:
             self.response.write(p.page_head + p.page_form + p.page_close)
 class PageView(object):
@@ -28,7 +28,7 @@ class PageView(object):
         <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
     </head>
-    <body>'''
+    <body style="margin-top: 25px">'''
         self.page_form = '''
         <div class="container">
         <form class="form-horizontal">
@@ -118,37 +118,36 @@ class PageView(object):
         self.form_results = '''
     <div class="container">
         <div class="jumbotron">
-            <h1>Thank You For Filling Out Our Form!</h1>
-            <p>We will be in contact with you shortly</p>
+            <h2>Thank You For Filling Out Our Form!</h2>
+            <p>We will be in contact with you shortly. Your details are listed below.</p>
         </div>
         <div class="list-group">
             <div class="list-group-item">
-                <h4 class="list-group-item-heading">List group item heading</h4>
-                <p class="list-group-item-text">...</p>
+                <h4 class="list-group-item-heading">Name: </h4>
+                <p class="list-group-item-text">%s</p>
             </div>
-            <div class="list-group-item active">
-                <h4 class="list-group-item-heading">List group item heading</h4>
-                <p class="list-group-item-text">...</p>
+            <div class="list-group-item">
+                <h4 class="list-group-item-heading">Email: </h4>
+                <p class="list-group-item-text">%s</p>
             </div>
-            <div class="list-group-item active">
-                <h4 class="list-group-item-heading">List group item heading</h4>
-                <p class="list-group-item-text">...</p>
+            <div class="list-group-item">
+                <h4 class="list-group-item-heading">Phone: </h4>
+                <p class="list-group-item-text">%s</p>
             </div>
-            <div class="list-group-item active">
-                <h4 class="list-group-item-heading">List group item heading</h4>
-                <p class="list-group-item-text">...</p>
+            <div class="list-group-item">
+                <h4 class="list-group-item-heading">Best Contact Method:</h4>
+                <p class="list-group-item-text">%s</p>
             </div>
-            <div class="list-group-item active">
-                <h4 class="list-group-item-heading">List group item heading</h4>
-                <p class="list-group-item-text">...</p>
+            <div class="list-group-item">
+                <h4 class="list-group-item-heading">Best Time to Reach You</h4>
+                <p class="list-group-item-text">%s</p>
             </div>
-            <div class="list-group-item active">
-                <h4 class="list-group-item-heading">List group item heading</h4>
-                <p class="list-group-item-text">...</p>
+            <div class="list-group-item">
+                <h4 class="list-group-item-heading">Additional Comments</h4>
+                <p class="list-group-item-text">%s</p>
             </div>
         </div>
     </div>
-
         '''
         self.page_close = '''
     </body>
