@@ -17,10 +17,10 @@ class MainHandler(webapp2.RequestHandler):
         page_body = '''<form method="GET" action="">
             <label for="user">User: </label><input type="text" name="user" />
             <label for="email">Email: </label><input type="text" name="email" />
-            <input type="submit" value="submit" />'''
+            <input type="submit" value="submit" />
+            </form>'''
 
         page_close = '''
-        </form>
     </body>
 </html>
         '''
