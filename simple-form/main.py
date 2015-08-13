@@ -24,9 +24,10 @@ class MainHandler(webapp2.RequestHandler):
     </body>
 </html>
         '''
-        if self.request.GET == True:
+        if self.request.GET:
             user = self.request.GET['user']
             email = self.request.GET['email']
+            self.response.write(page_head + user + " " + email + page_body + page_close)
         else:
             self.response.write(page_head + page_body + page_close)
         # self.response.write(page)
