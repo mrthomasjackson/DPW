@@ -6,31 +6,12 @@ Simple Form
 '''
 import webapp2
 
+from view import View
+
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        page_head = '''<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Simple Form</title>
-    </head>
-    <body>'''
-        page_body = '''<form method="GET" action="">
-            <label for="user">User: </label><input type="text" name="user" />
-            <label for="email">Email: </label><input type="text" name="email" />
-            <input type="submit" value="submit" />
-            </form>'''
-
-        page_close = '''
-    </body>
-</html>
-        '''
-        if self.request.GET:
-            user = self.request.GET['user']
-            email = self.request.GET['email']
-            self.response.write(page_head + user + " " + email + page_body + page_close)
-        else:
-            self.response.write(page_head + page_body + page_close)
-        # self.response.write(page)
+        page = View()
+        self.response.write(page.print_html())
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
