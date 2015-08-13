@@ -17,7 +17,7 @@ class MainHandler(webapp2.RequestHandler):
             comment = self.request.GET['comment']
             self.response.write(p.page_head + name + email + team + world + comment + p.page_close)
         else:
-            self.response.write(p.page_head + p.page_body + p.page_close)
+            self.response.write(p.page_head + p.page_form + p.page_close)
 class PageView(object):
     def __init__(self):
         self.page_head = '''<!DOCTYPE HTML>
@@ -28,8 +28,9 @@ class PageView(object):
         <link href="/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
     </head>
     <body>'''
-        self.page_body = '''
-        <form class="form-horizontal" method="GET" action="">
+        self.page_form = '''
+        <div class="container">
+        <form class="form-horizontal">
 <fieldset>
 
 <!-- Form Name -->
@@ -53,20 +54,29 @@ class PageView(object):
   </div>
 </div>
 
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="phone">Phone</label>
+  <div class="col-md-4">
+  <input id="phone" name="phone" type="text" placeholder="" class="form-control input-md">
+
+  </div>
+</div>
+
 <!-- Multiple Radios -->
 <div class="form-group">
-  <label class="col-md-4 control-label">Select Team</label>
+  <label class="col-md-4 control-label" for="contact_method">Best Way to Reach You</label>
   <div class="col-md-4">
   <div class="radio">
-    <label for="team-0">
-      <input type="radio" name="team" id="team-0" value="red" checked="checked">
-      Red
+    <label for="contact_method-0">
+      <input type="radio" name="contact_method" id="contact_method-0" value="email" checked="checked">
+      Email
     </label>
 	</div>
   <div class="radio">
-    <label for="team-1">
-      <input type="radio" name="team" id="team-1" value="blue">
-      Blue
+    <label for="contact_method-1">
+      <input type="radio" name="contact_method" id="contact_method-1" value="phone">
+      Phone
     </label>
 	</div>
   </div>
@@ -74,14 +84,12 @@ class PageView(object):
 
 <!-- Select Basic -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="world">Select World</label>
+  <label class="col-md-4 control-label" for="time_of_day">Best Time to Reach You</label>
   <div class="col-md-4">
-    <select id="world" name="world" class="form-control">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
+    <select id="time_of_day" name="time_of_day" class="form-control">
+      <option value="morning">Morning</option>
+      <option value="evening">Evening</option>
+      <option value="night">Night</option>
     </select>
   </div>
 </div>
@@ -104,6 +112,7 @@ class PageView(object):
 
 </fieldset>
 </form>
+</div>
         '''
 
         self.page_close = '''
