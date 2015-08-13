@@ -16,7 +16,7 @@ class MainHandler(webapp2.RequestHandler):
             contact_method = self.request.GET['contact_method']
             time_of_day = self.request.GET['time_of_day']
             comment = self.request.GET['comment']
-            self.response.write(p.page_head + name + email + phone + contact_method + time_of_day + comment + p.page_close)
+            self.response.write(p.page_head + p.form_results + p.page_close)
         else:
             self.response.write(p.page_head + p.page_form + p.page_close)
 class PageView(object):
@@ -115,7 +115,41 @@ class PageView(object):
 </form>
 </div>
         '''
+        self.form_results = '''
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Thank You For Filling Out Our Form!</h1>
+            <p>We will be in contact with you shortly</p>
+        </div>
+        <div class="list-group">
+            <div class="list-group-item">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">...</p>
+            </div>
+            <div class="list-group-item active">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">...</p>
+            </div>
+            <div class="list-group-item active">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">...</p>
+            </div>
+            <div class="list-group-item active">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">...</p>
+            </div>
+            <div class="list-group-item active">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">...</p>
+            </div>
+            <div class="list-group-item active">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">...</p>
+            </div>
+        </div>
+    </div>
 
+        '''
         self.page_close = '''
     </body>
 </html>
