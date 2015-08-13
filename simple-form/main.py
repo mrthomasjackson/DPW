@@ -20,12 +20,17 @@ class MainHandler(webapp2.RequestHandler):
             contact_method = self.request.GET['contact_method']
             time_of_day = self.request.GET['time_of_day']
             comment = self.request.GET['comment']
-            # 
+            # write the page with the form_results variable (including its own variables)
             self.response.write(p.page_head + p.form_results % (name, email, phone, contact_method, time_of_day, comment) + p.page_close)
+        # else statement to present form if form is blank
         else:
+            # write page with empty form
             self.response.write(p.page_head + p.page_form + p.page_close)
+# create new class to hold templates
 class PageView(object):
+    # initiate the class
     def __init__(self):
+        # html head elements stored below
         self.page_head = '''<!DOCTYPE HTML>
 <html>
     <head>
@@ -34,6 +39,7 @@ class PageView(object):
         <link href="/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
     </head>
     <body style="margin-top: 25px">'''
+        # html empty form stored below
         self.page_form = '''
         <div class="container">
         <form class="form-horizontal">
@@ -120,6 +126,7 @@ class PageView(object):
 </form>
 </div>
         '''
+        # html form results stored below
         self.form_results = '''
     <div class="container">
         <div class="jumbotron">
@@ -154,6 +161,7 @@ class PageView(object):
         </div>
     </div>
         '''
+        # html page close stored below
         self.page_close = '''
     </body>
 </html>
