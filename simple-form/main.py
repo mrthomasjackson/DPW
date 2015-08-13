@@ -1,35 +1,33 @@
-'''
-Thomas Jackson
-08/12/2015
-DPW
-Simple Form
-'''
 import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.page_head = '''<!DOCTYPE HTML>
+        p = Page()
+        p.body = "Update"
+        self.response.write(p.print_out())
+
+class Page(object):
+    def __init__(self):
+        self.title = "Welcome!"
+        self.css = "/css/style.css"
+        self.head = """
+<!DOCTYPE HTML>
 <html>
     <head>
-        <title>Simple Form</title>
+        <title>{self.title}</title>
+        <link href="{self.css}" rel="stylesheet" type="text/css"/link>
     </head>
-    <body>'''
-        self.page_body = '''<form method="GET" action="">
-            <label for="user">User: </label><input type="text" name="user" />
-            <label for="email">Email: </label><input type="text" name="email" />
-            <input type="submit" value="submit" />
-            </form>'''
-
-        self.page_close = '''
+    <body>
+        """
+        self.body = "Welcome to my Python Page"
+        self.close = """
     </body>
 </html>
-        '''
-        if self.request.GET:
-            user = self.request.GET['user']
-            email = self.request.GET['email']
-            self.response.write(self.page_head + user + email + self.page_body + self.page_close)
-        else:
-            self.response.write(self.page_head + self.page_body + self.page_close)
+    """
+    def print_out(self):
+        all = self.head + self.body + self.close
+        all = all.format(**locals())
+        return all
 
 
 app = webapp2.WSGIApplication([
