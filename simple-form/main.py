@@ -21,13 +21,17 @@ class PageView(object):
 <html>
     <head>
         <title>Simple Form</title>
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
     </head>
     <body>'''
-        self.page_body = '''<form method="GET" action="">
+        self.page_body = '''
+        <form method="GET" action="">
             <label for="user">User: </label><input type="text" name="user" />
             <label for="email">Email: </label><input type="text" name="email" />
             <input type="submit" value="submit" />
-            </form>'''
+        </form>
+        '''
 
         self.page_close = '''
     </body>
