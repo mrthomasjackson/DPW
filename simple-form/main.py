@@ -12,10 +12,11 @@ class MainHandler(webapp2.RequestHandler):
         if self.request.GET:
             name = self.request.GET['name']
             email = self.request.GET['email']
-            team = self.request.GET['team']
-            world = self.request.GET['world']
+            phone = self.request.GET['phone']
+            contact_method = self.request.GET['contact_method']
+            time_of_day = self.request.GET['time_of_day']
             comment = self.request.GET['comment']
-            self.response.write(p.page_head + name + email + team + world + comment + p.page_close)
+            self.response.write(p.page_head + name + email + phone + contact_method + time_of_day + comment + p.page_close)
         else:
             self.response.write(p.page_head + p.page_form + p.page_close)
 class PageView(object):
