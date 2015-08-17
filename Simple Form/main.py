@@ -6,7 +6,7 @@ Simple Form
 '''
 import webapp2
 
-# Class habdles the webpage
+# Class handles the webpage
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         # assign the PageView class to variable
