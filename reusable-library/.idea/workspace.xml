@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23073e02-803b-4df4-af00-65bf0e82f108" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages.py" afterPath="$PROJECT_DIR$/pages.py" />
     </list>
     <ignored path="reusable-library.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,18 +71,8 @@
           <file leaf-file-name="pages.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pages.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5378486">
-                  <caret line="27" column="24" selection-start-line="20" selection-start-column="4" selection-end-line="27" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="library.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/library.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.7171315">
+                  <caret line="36" column="24" selection-start-line="29" selection-start-column="4" selection-end-line="36" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -466,16 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../simple-form-getter-setter/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -500,10 +477,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5378486">
-          <caret line="27" column="24" selection-start-line="20" selection-start-column="4" selection-end-line="27" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.7171315">
+          <caret line="36" column="24" selection-start-line="29" selection-start-column="4" selection-end-line="36" selection-end-column="24" />
           <folding />
         </state>
       </provider>
