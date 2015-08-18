@@ -1,7 +1,8 @@
 class Page(object):
     def __init__(self):
-        self.__title = "Welcome!"
+        self.__title = "Conversion Utility"
         self.__css = "/css/styles.css"
+        self.__message = "Please Select Conversion Type: "
         self.__head = """
 <!DOCTYPE HTML>
 <html>
@@ -11,6 +12,11 @@ class Page(object):
     </head>
     <body>
                     """
+        self.__main = """
+        <div>
+            <h1>{self.message}</h1>
+        </div>
+        """
         self.__body = ""
         self.__error = ""
         self.__close = """
@@ -43,6 +49,15 @@ class Page(object):
     @css.setter
     def css(self, css):
         self.__css = css
+        self.print_out()
+
+    @property
+    def message(self):
+        return self.__message
+
+    @message.setter
+    def message(self, message):
+        self.__message = message
         self.print_out()
 
     def print_out(self):

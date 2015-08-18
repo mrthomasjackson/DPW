@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23073e02-803b-4df4-af00-65bf0e82f108" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library.py" afterPath="$PROJECT_DIR$/library.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages.py" afterPath="$PROJECT_DIR$/pages.py" />
     </list>
     <ignored path="reusable-library.iws" />
@@ -81,8 +79,8 @@
           <file leaf-file-name="pages.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pages.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.82071716">
-                  <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+                <state vertical-scroll-proportion="0.7808765">
+                  <caret line="60" column="24" selection-start-line="53" selection-start-column="4" selection-end-line="60" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -487,6 +485,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/library.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6573705">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15936255">
@@ -497,18 +503,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6573705">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82071716">
-          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.7808765">
+          <caret line="60" column="24" selection-start-line="53" selection-start-column="4" selection-end-line="60" selection-end-column="24" />
           <folding />
         </state>
       </provider>
