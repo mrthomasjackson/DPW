@@ -26,3 +26,8 @@ class Conversions(object):
     def conversion(self, conversion):
         pass
 
+    def inches_feet(self, inches):
+        self.__conversion = inches / 12
+        return self.conversion
+
+
