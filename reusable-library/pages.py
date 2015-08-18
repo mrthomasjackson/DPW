@@ -1,7 +1,7 @@
 class Page(object):
     def __init__(self):
         self.__title = "Welcome!"
-        self.css = "/css/styles.css"
+        self.__css = "/css/styles.css"
         self.__head = """
 <!DOCTYPE HTML>
 <html>
@@ -11,7 +11,7 @@ class Page(object):
     </head>
     <body>
                     """
-        self.body = ""
+        self.__body = ""
         self.__error = ""
         self.__close = """
     </body>
@@ -27,7 +27,25 @@ class Page(object):
         self.__title = title
         self.print_out()
 
+    @property
+    def body(self):
+        return self.__body
+
+    @body.setter
+    def body(self, body):
+        self.__body = body
+        self.print_out()
+
+    @property
+    def css(self):
+        return self.__css
+
+    @css.setter
+    def css(self, css):
+        self.__css = css
+        self.print_out()
+
     def print_out(self):
-        all = self.__head + self.body + self.__error + self.__close
+        all = self.__head + self.__body + self.__error + self.__close
         all = all.format(**locals())
         return all
