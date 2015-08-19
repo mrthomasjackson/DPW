@@ -16,6 +16,17 @@ class Page(object):
         <div>
             <h1>{self.message}</h1>
         </div>
+        <div>
+            <form action="" method="GET">
+            <label for="length">Length: </label>
+            <select id="length" name="length">
+                <option value="1" >First option</option>
+                <option value="2" >Second option</option>
+                <option value="3" >Third option</option>
+            </select>
+            <input class="button_text" type="submit" name="submit" value="Submit" />
+            </form>
+        </div>
         """
         self.__body = ""
         self.__error = ""
@@ -61,6 +72,6 @@ class Page(object):
         self.print_out()
 
     def print_out(self):
-        all = self.__head + self.__body + self.__error + self.__close
+        all = self.__head + self.__main + self.__body + self.__error + self.__close
         all = all.format(**locals())
         return all
