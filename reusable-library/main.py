@@ -9,18 +9,6 @@ class MainHandler(webapp2.RequestHandler):
         self.response.write(p.print_out())
 
 
-        if self.request.GET:
-            conversion_type = self.request.GET['conversionType']
-            if conversion_type == 'length':
-                self.response.write(p.print_length())
-            elif conversion_type == 'area':
-                self.response.write(p.print_length())
-            else:
-                pass
-
-        else:
-            pass
-
 
 
 
