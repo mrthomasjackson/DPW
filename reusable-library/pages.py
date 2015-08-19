@@ -3,7 +3,8 @@ class Page(object):
         self.__title = "BMI Utility"
         self.__css = "/css/styles.css"
         self.__message = "Please Fill Out The Following Form: "
-        self.__returned_value = "answer"
+        self.__english_bmi = ""
+        self.__metric_bmi = ""
         self.__head = """
 <!DOCTYPE HTML>
 <html>
@@ -55,7 +56,8 @@ class Page(object):
         """
         self.__results_view = '''
         <div>
-            <span>Your BMI is </span><span>{self.returned_value}</span>
+            <span>Your Metric BMI is </span><span>{self.metric_bmi}</span>
+            <span>Your English BMI is </span><span>{self.english_bmi}</span>
         </div>
         '''
         self.__body = ""
@@ -98,11 +100,21 @@ class Page(object):
         self.__message = message
 
     @property
-    def returned_value(self):
-        return self.__returned_value
+    def english_bmi(self):
+        return self.__english_bmi
 
-    @returned_value.setter
-    def returned_value(self, value):
+    @english_bmi.setter
+    def english_bmi(self, value):
+        self.__english_bmi = value
+        pass
+
+    @property
+    def metric_bmi(self):
+        return self.__metric_bmi
+
+    @metric_bmi.setter
+    def metric_bmi(self, value):
+        self.__metric_bmi = value
         pass
 
     def write_answer(self):
