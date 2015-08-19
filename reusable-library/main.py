@@ -9,10 +9,11 @@ class MainHandler(webapp2.RequestHandler):
             feet = self.request.GET['feet']
             inches = self.request.GET['inches']
             weight = self.request.GET['weight']
+            self.response.write(p.write_answer())
 
 
         else:
-            self.response.write(p.print_out())
+            self.response.write(p.write_form())
 
 
 
