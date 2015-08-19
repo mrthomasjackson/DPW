@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="23073e02-803b-4df4-af00-65bf0e82f108" name="Default" comment="" />
+=======
+    <list default="true" id="23073e02-803b-4df4-af00-65bf0e82f108" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages.py" afterPath="$PROJECT_DIR$/pages.py" />
+    </list>
+>>>>>>> parent of 9de2ddc... Added Area and length views
     <ignored path="reusable-library.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -24,8 +30,13 @@
             <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/../Simple Form/main.py">
                 <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                   <state vertical-scroll-proportion="0.5378486">
                     <caret line="27" column="73" selection-start-line="14" selection-start-column="8" selection-end-line="27" selection-end-column="73" />
+=======
+                  <state vertical-scroll-proportion="-0.07968128">
+                    <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> parent of 9de2ddc... Added Area and length views
                     <folding />
                   </state>
                 </provider>
@@ -52,8 +63,13 @@
             <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/main.py">
                 <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                   <state vertical-scroll-proportion="0.35856575">
                     <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+=======
+                  <state vertical-scroll-proportion="0.15936255">
+                    <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+>>>>>>> parent of 9de2ddc... Added Area and length views
                     <folding>
                       <element signature="e#0#14#0" expanded="true" />
                     </folding>
@@ -77,8 +93,13 @@
           <file leaf-file-name="pages.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pages.py">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state vertical-scroll-proportion="0.3625498">
                   <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+=======
+                <state vertical-scroll-proportion="0.61752987">
+                  <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+>>>>>>> parent of 9de2ddc... Added Area and length views
                   <folding />
                 </state>
               </provider>
@@ -91,8 +112,13 @@
           <file leaf-file-name="library.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/library.py">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state vertical-scroll-proportion="0.0">
                   <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+                <state vertical-scroll-proportion="0.6573705">
+                  <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+>>>>>>> parent of 9de2ddc... Added Area and length views
                   <folding />
                 </state>
               </provider>
@@ -488,6 +514,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -498,12 +525,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5378486">
           <caret line="27" column="73" selection-start-line="14" selection-start-column="8" selection-end-line="27" selection-end-column="73" />
+=======
+        <state vertical-scroll-proportion="0.6573705">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+>>>>>>> parent of 9de2ddc... Added Area and length views
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.3625498">
           <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
           <folding />
@@ -517,6 +549,29 @@
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
+=======
+        <state vertical-scroll-proportion="0.15936255">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Simple Form/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.07968128">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61752987">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding />
+>>>>>>> parent of 9de2ddc... Added Area and length views
         </state>
       </provider>
     </entry>

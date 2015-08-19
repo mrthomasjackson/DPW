@@ -2,8 +2,12 @@ class Page(object):
     def __init__(self):
         self.__title = "BMI Utility"
         self.__css = "/css/styles.css"
+<<<<<<< HEAD
         self.__message = "Please Fill Out The Following Form: "
         self.__returned_value = "answer"
+=======
+        self.__message = "Please Select Conversion Type: "
+>>>>>>> parent of 9de2ddc... Added Area and length views
         self.__head = """
 <!DOCTYPE HTML>
 <html>
@@ -13,13 +17,18 @@ class Page(object):
     </head>
     <body>
                     """
+<<<<<<< HEAD
         self.__main = ""
         self.__form = """
+=======
+        self.__main = """
+>>>>>>> parent of 9de2ddc... Added Area and length views
         <div>
             <h1>{self.message}</h1>
         </div>
         <div>
             <form action="" method="GET">
+<<<<<<< HEAD
             <label for='name'>Enter Your Name</label>
             <input type='text' name='name' id='name'></input></br>
             <select id='feet'>
@@ -55,6 +64,18 @@ class Page(object):
         """
 
 
+=======
+            <label for="length">Length: </label>
+            <select id="length" name="length">
+                <option value="1" >First option</option>
+                <option value="2" >Second option</option>
+                <option value="3" >Third option</option>
+            </select>
+            <input class="button_text" type="submit" name="submit" value="Submit" />
+            </form>
+        </div>
+        """
+>>>>>>> parent of 9de2ddc... Added Area and length views
         self.__body = ""
         self.__error = ""
         self.__close = """
@@ -99,6 +120,10 @@ class Page(object):
         self.print_out()
 
     def print_out(self):
+<<<<<<< HEAD
         all = self.__head + self.__main + self.__form + self.__error + self.__close
+=======
+        all = self.__head + self.__main + self.__body + self.__error + self.__close
+>>>>>>> parent of 9de2ddc... Added Area and length views
         all = all.format(**locals())
         return all
