@@ -5,7 +5,8 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         p = Page()
         if self.request.GET:
-            feet = self.request.GET['name']
+            name = self.request.GET['name']
+            print name
 
         else:
             self.response.write(p.print_out())

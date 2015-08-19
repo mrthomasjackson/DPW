@@ -21,7 +21,7 @@ class Page(object):
         <div>
             <form action="" method="GET">
             <label for='name'>Enter Your Name</label>
-            <input type='text' id='name'></input>
+            <input type='text' name='name' id='name'></input></br>
             <select id='feet'>
                 <option value='4'>4</option>
                 <option value='5'>5</option>
@@ -44,7 +44,9 @@ class Page(object):
                 <option value='10'>10</option>
                 <option value='11'>11</option>
             </select>
-            <label for="inches">:Inches</label>
+            <label for="inches">:Inches</label></br>
+            <label for='weight'>Weight (In Pounds)</label>
+            <input type='text id='weight'/>
 
 
             <input class="" type="submit" name="submit" value="Submit" />
