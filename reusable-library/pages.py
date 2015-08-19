@@ -21,9 +21,31 @@ class Page(object):
         <div>
             <form action="" method="GET">
             <label for='name'>Enter Your Name</label>
-            <input type='text' id='name'>
-            <label for="conversionType"></label>
-            <
+            <input type='text' id='name'></input>
+            <select id='feet'>
+                <option value='4'>4</option>
+                <option value='5'>5</option>
+                <option value='6'>6</option>
+                <option value='7'>7</option>
+                <option value='8'>8</option>
+            </select>
+            <label for="feet">:Feet</label>
+            <select id='inches'>
+                <option value='0'>0</option>
+                <option value='1'>1</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5</option>
+                <option value='6'>6</option>
+                <option value='7'>7</option>
+                <option value='8'>8</option>
+                <option value='9'>9</option>
+                <option value='10'>10</option>
+                <option value='11'>11</option>
+            </select>
+            <label for="inches">:Inches</label>
+
 
             <input class="" type="submit" name="submit" value="Submit" />
             </form>
@@ -75,6 +97,6 @@ class Page(object):
         self.print_out()
 
     def print_out(self):
-        all = self.__head + self.__main + self.__select_conversion + self.__error + self.__close
+        all = self.__head + self.__main + self.__form + self.__error + self.__close
         all = all.format(**locals())
         return all

@@ -1,12 +1,14 @@
 import webapp2
 from pages import Page
-from library import Length, Conversions
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         p = Page()
-        c = Conversions()
-        self.response.write(p.print_out())
+        if self.request.GET:
+            feet = self.request.GET['name']
+
+        else:
+            self.response.write(p.print_out())
 
 
 
