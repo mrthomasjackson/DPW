@@ -163,4 +163,3 @@ class Page(object):
         page = self.__head + self.__main + self.__form + self.__error + self.__close
         page = page.format(**locals())
         return page
-    

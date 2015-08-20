@@ -1,5 +1,7 @@
+# class to hold the form data
 class DataHolder(object):
     def __init__(self):
+        # private variables to hold the form data
         self.__name = ''
         self.__inches = 0
         self.__feet = 0
@@ -9,6 +11,7 @@ class DataHolder(object):
         self.__pounds = 0
         self.__kilograms = 0
 
+    # ALL THE GETTERS AND SETTERS BELOW ARE TO FULLY ENCAPSULATE THE DATAHOLDER CLASS
     @property
     def name(self):
         return self.__name
@@ -73,10 +76,13 @@ class DataHolder(object):
     def kilograms(self, kilograms):
         self.__kilograms = kilograms
 
+# create class to crunch the numbers
 class MetricUnitConverter(object):
     def __init__(self):
+        # no local variables... all are stored in the data library
         pass
 
+    # convert feet and inches to meters
     def height_converter(self, feet, inches):
         inch1 = int(feet) * 12
         inch2 = int(inches)
@@ -85,20 +91,24 @@ class MetricUnitConverter(object):
         meters = centimeters * 0.01
         return meters
 
+    # convert lbs to kg
     def weight_converter(self, pounds):
         kg = int(pounds) * 0.453592
         return kg
 
+    #convert feet and inches to inches
     def inches_only(self, feet, inches):
         inch1 = int(feet) * 12
         inch2 = int(inches)
         total_inches = inch1 + inch2
         return total_inches
 
+    # calc out metric bmi
     def metric_bmi_calculator(self, weight, height):
         bmi = ((float(weight)) / (float(height) ** 2))
         return bmi
 
+    # cal english bmi
     def english_bmi_calculator(self, weight, height):
         bmi = ((float(weight)) / (float(height) ** 2)) * 703
         return bmi
