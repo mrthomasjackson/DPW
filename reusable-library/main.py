@@ -19,6 +19,7 @@ class MainHandler(webapp2.RequestHandler):
             p.english_bmi = u.english_bmi_calculator(data.pounds, data.total_inches)
             p.metric_bmi = u.metric_bmi_calculator(data.kilograms, data.meters)
             p.name = data.name
+            p.message = "Thanks for filling out our form!"
 
             self.response.write(p.write_answer())
 

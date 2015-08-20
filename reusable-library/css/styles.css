@@ -57,3 +57,23 @@ select {
 .submit:hover {
     background-color: #419641;
 }
+.hello {
+    font-size: larger;
+}
+.pre-bmi {
+    margin-left: 15px;
+    font-size: large;
+}
+.bmi {
+    font-weight: bold;
+    font-size: x-large;
+}
+.message {
+    font-weight: 200;
+}
+.back {
+    color: white;
+}
+.back:active {
+    color: white;
+}

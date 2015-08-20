@@ -57,10 +57,15 @@ class Page(object):
         </div>
         """
         self.__results_view = '''
-        <div>
-            <span>Hello {self.name}</span>
-            <span>Your Metric BMI is </span><span>{self.metric_bmi}</span>
-            <span>Your English BMI is </span><span>{self.english_bmi}</span>
+        <header>
+            <h1>{self.message}</h1>
+        </header>
+        <div class='message'>
+            <span class='hello'>Hello {self.name},</span><br><br>
+            <span class='pre-bmi'>Your Metric BMI is </span><span class='bmi'>{self.metric_bmi}</span><br>
+            <span class='pre-bmi'>Your English BMI is </span><span class='bmi'>{self.english_bmi}</span></br>
+            <br>
+            <a href='/' class='back' title='back'>Take Me Back</a>
         </div>
         '''
         self.__body = ""

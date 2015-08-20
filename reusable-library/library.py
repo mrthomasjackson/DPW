@@ -75,11 +75,7 @@ class DataHolder(object):
 
 class MetricUnitConverter(object):
     def __init__(self):
-        self.__inches = 0
-        self.__feet = 0
-        self.__centimeters = 0
-        self.__pounds = 0
-        self.__kilograms = 0
+        pass
 
     def height_converter(self, feet, inches):
         inch1 = int(feet) * 12
