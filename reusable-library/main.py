@@ -6,6 +6,7 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         p = Page()
         u = MetricUnitConverter()
+
         if self.request.GET:
             name = self.request.GET['name']
             feet = self.request.GET['feet']
@@ -16,6 +17,7 @@ class MainHandler(webapp2.RequestHandler):
             only_inches = u.inches_only(feet, inches)
             p.english_bmi = u.english_bmi_calculator(weight, only_inches)
             p.metric_bmi = u.metric_bmi_calculator(kilograms, meters)
+            u
 
             self.response.write(p.write_answer())
 

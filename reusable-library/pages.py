@@ -118,6 +118,14 @@ class Page(object):
     def metric_bmi(self, value):
         self.__metric_bmi = value
 
+    @property
+    def name(self):
+        return self.__name
+
+    @name.setter
+    def name(self, name):
+        self.__name = name
+
 
     def write_answer(self):
         page = self.__head + self.__main + self.__results_view + self.__error + self.__close
