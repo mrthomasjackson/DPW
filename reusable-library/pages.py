@@ -27,14 +27,14 @@ class Page(object):
             <h1>{self.message}</h1>
         </header>
         <div>
-            <form action="" method="GET">
+            <form action="" id='bmi_form' method="GET">
             <label for='name'>Name</label>
-            <input type='text' name='name' id='name'></input></br>
+            <input type='text' name='name' id='name' required/></br>
 
             <label for='weight'>Weight (In Pounds)</label>
-            <input type='text' name='weight' id='weight'/></br>
+            <input type='text' name='weight' id='weight' required/></br>
             <span class='form-group-label'>Height</span></br>
-            <select id='feet' name='feet'>
+            <select id='feet' name='feet' required>
                 <option value='4'>4</option>
                 <option value='5'>5</option>
                 <option value='6'>6</option>
@@ -42,7 +42,7 @@ class Page(object):
                 <option value='8'>8</option>
             </select>
             <label for="feet">:Feet</label>
-            <select id='inches' name='inches'>
+            <select id='inches' name='inches' required>
                 <option value='0'>0</option>
                 <option value='1'>1</option>
                 <option value='2'>2</option>
@@ -83,7 +83,7 @@ class Page(object):
     <script src="/js/validate.min.js"></script>
     <script type='text/javascript'>
         $(document).ready(function(){
-            
+            $("#bmi_form").validate();
         })
     </script>
     </body>
@@ -161,12 +161,14 @@ class Page(object):
 
     # function to write the results view
     def write_answer(self):
-        page = self.__head + self.__main + self.__results_view + self.__error + self.__close
+        page = self.__head + self.__main + self.__results_view + self.__error
         page = page.format(**locals())
-        return page
+        final = page + self.__close
+        return final
 
     # function to write the form view
     def write_form(self):
-        page = self.__head + self.__main + self.__form + self.__error + self.__close
+        page = self.__head + self.__main + self.__form + self.__error
         page = page.format(**locals())
-        return page
+        final = page + self.__close
+        return final
