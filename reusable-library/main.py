@@ -13,10 +13,9 @@ class MainHandler(webapp2.RequestHandler):
             weight = self.request.GET['weight']
             meters = u.height_converter(feet, inches)
             kilograms = u.weight_converter(weight)
-            metric_bmi = u.metric_bmi_calculator(kilograms, meters)
-
-
-
+            only_inches = u.inches_only(feet, inches)
+            p.english_bmi = u.english_bmi_calculator(weight, only_inches)
+            p.metric_bmi = u.metric_bmi_calculator(kilograms, meters)
 
             self.response.write(p.write_answer())
 
