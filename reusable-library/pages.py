@@ -14,6 +14,7 @@ class Page(object):
     <head>
         <title>{self.title}</title>
         <link href="{self.css}" rel="stylesheet" type="text/css" />
+        <script src="/js/jquery.min.js"></script>
     </head>
     <body>
     <div class='container'>
@@ -79,6 +80,12 @@ class Page(object):
         # HTML to close out the page
         self.__close = """
     </div>
+    <script src="/js/validate.min.js"></script>
+    <script type='text/javascript'>
+        $(document).ready(function(){
+            
+        })
+    </script>
     </body>
 </html>
                     """
