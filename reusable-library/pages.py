@@ -83,7 +83,14 @@ class Page(object):
     <script src="/js/validate.min.js"></script>
     <script type='text/javascript'>
         $(document).ready(function(){
-            $("#bmi_form").validate();
+            $( "#bmi_form" ).validate({
+                rules: {
+                    weight: {
+                        required: true,
+                        digits: true
+                    }
+                }
+            });
         })
     </script>
     </body>
