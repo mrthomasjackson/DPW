@@ -14,16 +14,21 @@ class Page(object):
         <link href="{self.css}" rel="stylesheet" type="text/css" />
     </head>
     <body>
+    <div class='container'>
                     """
         self.__main = ""
         self.__form = """
-        <div>
+        <header>
             <h1>{self.message}</h1>
-        </div>
+        </header>
         <div>
             <form action="" method="GET">
-            <label for='name'>Enter Your Name</label>
+            <label for='name'>Name</label>
             <input type='text' name='name' id='name'></input></br>
+
+            <label for='weight'>Weight (In Pounds)</label>
+            <input type='text' name='weight' id='weight'/></br>
+            <span class='form-group-label'>Height</span></br>
             <select id='feet' name='feet'>
                 <option value='4'>4</option>
                 <option value='5'>5</option>
@@ -46,12 +51,8 @@ class Page(object):
                 <option value='10'>10</option>
                 <option value='11'>11</option>
             </select>
-            <label for="inches">:Inches</label></br>
-            <label for='weight'>Weight (In Pounds)</label>
-            <input type='text' name='weight' id='weight'/>
-
-
-            <input class="" type="submit" name="submit" value="Submit" />
+            <label for="inches">:Inches</label><br>
+            <input style='margin-top: 25px' class="submit" type="submit" name="submit" value="Submit" />
             </form>
         </div>
         """
@@ -65,6 +66,7 @@ class Page(object):
         self.__body = ""
         self.__error = ""
         self.__close = """
+    </div>
     </body>
 </html>
                     """
