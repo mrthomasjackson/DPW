@@ -22,7 +22,6 @@ class MainHandler(webapp2.RequestHandler):
 
             self.response.write(p.write_answer())
 
-
         else:
             self.response.write(p.write_form())
 
