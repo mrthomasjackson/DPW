@@ -1,11 +1,21 @@
 class DataHolder(object):
     def __init__(self):
+        self.__name = ''
         self.__inches = 0
         self.__feet = 0
+        self.__total_inches = 0
         self.__centimeters = 0
         self.__meters = 0
         self.__pounds = 0
         self.__kilograms = 0
+
+    @property
+    def name(self):
+        return self.__name
+
+    @name.setter
+    def name(self, name):
+        self.__name = name
 
     @property
     def inches(self):
@@ -22,6 +32,14 @@ class DataHolder(object):
     @feet.setter
     def feet(self, feet):
         self.__feet = feet
+
+    @property
+    def total_inches(self):
+        return self.__total_inches
+
+    @total_inches.setter
+    def total_inches(self, inches):
+        self.__total_inches = inches
 
     @property
     def centimeters(self):
@@ -88,6 +106,4 @@ class MetricUnitConverter(object):
     def english_bmi_calculator(self, weight, height):
         bmi = ((float(weight)) / (float(height) ** 2)) * 703
         return bmi
-class EnglishUnitConverter(object):
-
 
