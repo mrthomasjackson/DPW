@@ -5,6 +5,7 @@ class Page(object):
         self.__message = "Please Fill Out The Following Form: "
         self.__english_bmi = ""
         self.__metric_bmi = ""
+        self.__name = ''
         self.__head = """
 <!DOCTYPE HTML>
 <html>
@@ -56,6 +57,7 @@ class Page(object):
         """
         self.__results_view = '''
         <div>
+            <span>Hello {self.name}</span>
             <span>Your Metric BMI is </span><span>{self.metric_bmi}</span>
             <span>Your English BMI is </span><span>{self.english_bmi}</span>
         </div>
@@ -106,7 +108,7 @@ class Page(object):
     @english_bmi.setter
     def english_bmi(self, value):
         self.__english_bmi = value
-        pass
+
 
     @property
     def metric_bmi(self):
@@ -115,7 +117,7 @@ class Page(object):
     @metric_bmi.setter
     def metric_bmi(self, value):
         self.__metric_bmi = value
-        pass
+
 
     def write_answer(self):
         page = self.__head + self.__main + self.__results_view + self.__error + self.__close
