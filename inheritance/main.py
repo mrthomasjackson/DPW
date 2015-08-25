@@ -24,6 +24,12 @@ class Page(object):
     def print_out(self):
         return self._head + self._body + self._close
 
+class FormPage(Page):
+    def __init__(self):
+        Page.__init__()
+        self._form_open = '<form method="GET">'
+        self._form_close = '</form>'
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
