@@ -1,10 +1,16 @@
 import webapp2
-from pages import Page
-
+from pages import *
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        p = Page()
-        self.response.write(p.print_out())
+        page = Page()
+        mainPage = MainPage()
+
+        if self.request.GET:
+            pass
+        else:
+            self.response.write(mainPage.print_out())
+
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)

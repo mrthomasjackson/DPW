@@ -24,8 +24,54 @@ class MainPage(Page):
     def __init__(self):
         super(MainPage, self).__init__()
         self._body = '''
-        <form
+        <form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Form Name</legend>
+
+<!-- Button -->
+<div class="form-group">
+  <div class="col-md-4">
+    <button id="distance_view" name="distance_view" class="btn btn-primary">Distance</button>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <div class="col-md-4">
+    <button id="weight_view" name="weight_view" class="btn btn-primary">Weight</button>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <div class="col-md-4">
+    <button id="volume_view" name="volume_view" class="btn btn-primary">Volume</button>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <div class="col-md-4">
+    <button id="temperature_view" name="temperature_view" class="btn btn-primary">Temperature</button>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <div class="col-md-4">
+    <button id="speed_view" name="speed_view" class="btn btn-primary">Speed</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
         '''
+
+    def print_out(self):
+        return self._open + self._body + self._close
+    
 
 class DistancePage(Page):
     def __init__(self):
