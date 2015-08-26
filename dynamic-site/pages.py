@@ -5,11 +5,14 @@ class Page(object):
 <html>
     <head>
         <title></title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
                 '''
         self._body = ''
         self._close = '''
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
                 '''
