@@ -69,8 +69,6 @@ class MainHandler(webapp2.RequestHandler):
         else:
             self.response.write(main_page.print_out())
 
-
-
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)

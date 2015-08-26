@@ -31,6 +31,7 @@ class Page(object):
     </body>
 </html>
                 '''
+
     # function to print out HTML to browser
     def print_out(self):
         return self._open + self._body + self._close

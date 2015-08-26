@@ -102,7 +102,3 @@ class Brazil(Data):
         self._currency = 'Real'
         self._gdp = '2.25 Trillion USD'
         self._population = '200.4 Million'
-
-
-
-
