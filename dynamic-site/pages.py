@@ -1,3 +1,4 @@
+# create class to hold basic HTML backbone
 class Page(object):
     def __init__(self):
         self._open = '''
@@ -30,11 +31,12 @@ class Page(object):
     </body>
 </html>
                 '''
-
+    # function to print out HTML to browser
     def print_out(self):
         return self._open + self._body + self._close
 
 
+# sub-class of Page class to hold default view
 class MainPage(Page):
     def __init__(self):
         super(MainPage, self).__init__()
@@ -52,9 +54,12 @@ class MainPage(Page):
         </div>
         '''
 
+    # polymorphic class of print out
     def print_out(self):
         return self._open + self._body + self._close
 
+
+# detailed view is a subclass of Page class
 class FinalView(Page):
     def __init__(self):
         super(FinalView, self).__init__()
@@ -64,6 +69,7 @@ class FinalView(Page):
         self.__gdp = ''
         self.__population = ''
 
+    # create getters and setters for data attributes above
     @property
     def country(self):
         return self.__country
@@ -131,6 +137,7 @@ class FinalView(Page):
         </div>
         '''
 
+    # polymorphic class to override Page.print_out
     def print_out(self):
         page = self._open + self._body + self._close
         page = page.format(**locals())
