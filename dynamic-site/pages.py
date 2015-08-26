@@ -42,11 +42,11 @@ class MainPage(Page):
         <div class="row my-row">
             <div class="col-xs-12 col-md-offset-2 col-md-4 col-lg-3">
             <div class="my-container list-group">
-                <a class="btn btn-lg btn-default list-group-item" href="?country=China&capital=Beijing&currency=Renminbi&gdp=9.24%20trillion&population=1.34%20billion" class="button button-default">China</a>
-                <a class="btn btn-lg btn-default list-group-item" href="?country=India&capital=New%20Delhi&currency=Rupee&gdp=1.88%20trillion&population=1.25%20billion" class="button button-default">India</a>
-                <a class="btn btn-lg btn-default list-group-item" href="?country=United%20States&capital=Washington%20DC&currency=Dollar&gdp=16.77%20trillion&population=318.9%20million" class="button button-default">United States</a>
-                <a class="btn btn-lg btn-default list-group-item" href="?country=Indonesia&capital=Jakarta&currency=Rupiah&gdp=868.3%20billion&population=249.9%20million" class="button button-default">Indonesia</a>
-                <a class="btn btn-lg btn-default list-group-item" href="?country=Brazil&capital=Brasilia&currency=Real&gdp=2.25%20trillion&population=200.4%20million" class="button button-default">Brazil</a>
+                <a class="btn btn-lg btn-default list-group-item" href="?country=China" class="button button-default">China</a>
+                <a class="btn btn-lg btn-default list-group-item" href="?country=India" class="button button-default">India</a>
+                <a class="btn btn-lg btn-default list-group-item" href="?country=UnitedStates" class="button button-default">United States</a>
+                <a class="btn btn-lg btn-default list-group-item" href="?country=Indonesia" class="button button-default">Indonesia</a>
+                <a class="btn btn-lg btn-default list-group-item" href="?country=Brazil" class="button button-default">Brazil</a>
             </div>
             </div>
         </div>

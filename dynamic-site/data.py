@@ -50,51 +50,51 @@ class Data(object):
 class China(Data):
     def __init__(self):
         super(China, self).__init__()
-        self.country = 'China'
-        self.capital = 'Beijing'
-        self.currency = 'Renminbi'
-        self.gdp = '9.24 Trillion USD'
-        self.population = '1.34 Billion'
+        self._country = 'China'
+        self._capital = 'Beijing'
+        self._currency = 'Renminbi'
+        self._gdp = '9.24 Trillion USD'
+        self._population = '1.34 Billion'
 
 
 class India(Data):
     def __init__(self):
         super(India, self).__init__()
-        self.country = 'India'
-        self.capital = 'New Delhi'
-        self.currency = 'Rupee'
-        self.gdp = '1.88 Trillion USD'
-        self.population = '1.25 Billion'
+        self._country = 'India'
+        self._capital = 'New Delhi'
+        self._currency = 'Rupee'
+        self._gdp = '1.88 Trillion USD'
+        self._population = '1.25 Billion'
 
 
 class UnitedStates(Data):
     def __init__(self):
         super(UnitedStates, self).__init__()
-        self.country = 'United States'
-        self.capital = 'Washington DC'
-        self.currency = 'Dollar'
-        self.gdp = '16.77 Trillion USD'
-        self.population = '318.9 Million'
+        self._country = 'United States'
+        self._capital = 'Washington DC'
+        self._currency = 'Dollar'
+        self._gdp = '16.77 Trillion USD'
+        self._population = '318.9 Million'
 
 
 class Indonesia(Data):
     def __init__(self):
         super(Indonesia, self).__init__()
-        self.country = 'Indonesia'
-        self.capital = 'Jakarta'
-        self.currency = 'Rupiah'
-        self.gdp = '868.3 Billion USD'
-        self.population = '249.9 Million'
+        self._country = 'Indonesia'
+        self._capital = 'Jakarta'
+        self._currency = 'Rupiah'
+        self._gdp = '868.3 Billion USD'
+        self._population = '249.9 Million'
 
 
 class Brazil(Data):
     def __init__(self):
         super(Brazil, self).__init__()
-        self.country = 'Brazil'
-        self.capital = 'Brazilia'
-        self.currency = 'Real'
-        self.gdp = '2.25 Trillion USD'
-        self.population = '200.4 Million'
+        self._country = 'Brazil'
+        self._capital = 'Brazilia'
+        self._currency = 'Real'
+        self._gdp = '2.25 Trillion USD'
+        self._population = '200.4 Million'
 
 
 
