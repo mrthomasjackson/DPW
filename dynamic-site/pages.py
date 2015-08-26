@@ -85,7 +85,8 @@ class FinalView(Page):
         self.__population = population
 
         self._body = '''
-        <div class='jubotron'>
+        <div class="container">
+        <div class='jumbotron'>
             <h1>{self.country}</h1>
         </div>
         <div class="list-group">
@@ -98,13 +99,14 @@ class FinalView(Page):
                 <p class="list-group-item-text">{self.currency}</p>
             </div>
             <div class='list-group-item'>
-                <h2 class="list-group-item-heading">Gross Domestic Product (GDP):</h2>
+                <h2 class="list-group-item-heading">Gross Domestic Product:</h2>
                 <p class="list-group-item-text">{self.gdp}</p>
             </div>
             <div class='list-group-item'>
                 <h2 class="list-group-item-heading">Population:</h2>
                 <p class="list-group-item-text">{self.population}</p>
             </div>
+        </div>
         </div>
         '''
 
