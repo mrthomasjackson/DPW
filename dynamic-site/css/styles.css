@@ -33,3 +33,7 @@ body {
 .home {
     color: white;
 }
+
+* {
+    border-radius: 0 !important;
+}
