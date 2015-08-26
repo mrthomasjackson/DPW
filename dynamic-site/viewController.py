@@ -53,7 +53,7 @@ class ViewController(object):
             self.__temperature_view = True
         else:
             self.__temperature_view = False
-    
+
     @property
     def speed_view(self):
         return self.__speed_view

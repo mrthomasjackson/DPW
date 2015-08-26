@@ -1,14 +1,13 @@
 import webapp2
 from pages import *
+from viewController import *
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         page = Page()
         mainPage = MainPage()
+        viewController = ViewController()
 
-        if self.request.GET:
 
-        else:
-            self.response.write(mainPage.print_out())
 
 
 
