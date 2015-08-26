@@ -25,11 +25,16 @@ class MainPage(Page):
     def __init__(self):
         super(MainPage, self).__init__()
         self._body = '''
-        <a href="?country=China&capital=Beijing&currency=Renminbi&gdp=9.24%20trillion&population=1.34%20billion" class="button button-default">China</a>
-        <a href="?country=India&capital=New%20Delhi&currency=Rupee&gdp=1.88%20trillion&population=1.25%20billion" class="button button-default">India</a>
-        <a href="?country=United%20States&capital=Washington%20DC&currency=Dollar&gdp=16.77%20trillion&population=318.9%20million" class="button button-default">United States</a>
-        <a href="?country=Indonesia&capital=Jakarta&currency=Rupiah&gdp=868.3%20billion&population=249.9%20million" class="button button-default">Indonesia</a>
-        <a href="?country=Brazil&capital=Brasilia&currency=Real&gdp=2.25%20trillion&population=200.4%20million" class="button button-default">China</a>
+        <div class="container">
+            <div clas
+            <ul class="nav nav-pills nav-stacked">
+                <li role="presentation"><a href="?country=China&capital=Beijing&currency=Renminbi&gdp=9.24%20trillion&population=1.34%20billion" class="button button-default">China</a></li>
+                <li role="presentation"><a href="?country=India&capital=New%20Delhi&currency=Rupee&gdp=1.88%20trillion&population=1.25%20billion" class="button button-default">India</a></li>
+                <li role="presentation"><a href="?country=United%20States&capital=Washington%20DC&currency=Dollar&gdp=16.77%20trillion&population=318.9%20million" class="button button-default">United States</a></li>
+                <li role="presentation"><a href="?country=Indonesia&capital=Jakarta&currency=Rupiah&gdp=868.3%20billion&population=249.9%20million" class="button button-default">Indonesia</a></li>
+                <li role="presentation"><a href="?country=Brazil&capital=Brasilia&currency=Real&gdp=2.25%20trillion&population=200.4%20million" class="button button-default">China</a></li>
+            </ul>
+        </div>
         '''
 
     def print_out(self):
@@ -107,6 +112,7 @@ class FinalView(Page):
                 <p class="list-group-item-text">{self.population}</p>
             </div>
         </div>
+        <a href="/">Take Me Back</a>
         </div>
         '''
 
@@ -114,3 +120,4 @@ class FinalView(Page):
         page = self._open + self._body + self._close
         page = page.format(**locals())
         return page
+    
