@@ -1,49 +1,101 @@
 class Data(object):
     def __init__(self):
-        self.__country = ''
-        self.__capital = ''
-        self.__currency = ''
-        self.__gdp = ''
-        self.__population = ''
+        self._country = ''
+        self._capital = ''
+        self._currency = ''
+        self._gdp = ''
+        self._population = ''
 
     @property
     def country(self):
-        return self.__country
+        return self._country
 
     @country.setter
     def country(self, country):
-        self.__country = country
+        self._country = country
 
     @property
     def capital(self):
-        return self.__capital
+        return self._capital
 
     @capital.setter
     def capital(self, capital):
-        self.__capital = capital
+        self._capital = capital
 
     @property
     def currency(self):
-        return self.__currency
+        return self._currency
 
     @currency.setter
     def currency(self, currency):
-        self.__currency = currency
+        self._currency = currency
 
     @property
     def gdp(self):
-        return self.__gdp
+        return self._gdp
 
     @gdp.setter
     def gdp(self, gdp):
-        self.__gdp = gdp
+        self._gdp = gdp
 
     @property
     def population(self):
-        return self.__population
+        return self._population
 
     @population.setter
     def population(self, population):
-        self.__population = population
+        self._population = population
+
+
+class China(Data):
+    def __init__(self):
+        super(China, self).__init__()
+        self.country = 'China'
+        self.capital = 'Beijing'
+        self.currency = 'Renminbi'
+        self.gdp = '9.24 Trillion USD'
+        self.population = '1.34 Billion'
+
+
+class India(Data):
+    def __init__(self):
+        super(India, self).__init__()
+        self.country = 'China'
+        self.capital = 'Beijing'
+        self.currency = 'Renminbi'
+        self.gdp = '9.24 Trillion USD'
+        self.population = '1.34 Billion'
+
+
+class UnitedStates(Data):
+    def __init__(self):
+        super(UnitedStates, self).__init__()
+        self.country = 'China'
+        self.capital = 'Beijing'
+        self.currency = 'Renminbi'
+        self.gdp = '9.24 Trillion USD'
+        self.population = '1.34 Billion'
+
+
+class Indonesia(Data):
+    def __init__(self):
+        super(Indonesia, self).__init__()
+        self.country = 'China'
+        self.capital = 'Beijing'
+        self.currency = 'Renminbi'
+        self.gdp = '9.24 Trillion USD'
+        self.population = '1.34 Billion'
+
+
+class Brazil(Data):
+    def __init__(self):
+        super(Brazil, self).__init__()
+        self.country = 'China'
+        self.capital = 'Beijing'
+        self.currency = 'Renminbi'
+        self.gdp = '9.24 Trillion USD'
+        self.population = '1.34 Billion'
+
+
 
 
