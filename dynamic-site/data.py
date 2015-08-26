@@ -46,3 +46,4 @@ class Data(object):
     def population(self, population):
         self.__population = population
 
+
