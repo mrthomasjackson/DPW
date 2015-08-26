@@ -6,8 +6,14 @@ class Page(object):
     <head>
         <title></title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
     </head>
     <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Top 5 Countries By Population</a>
+            </div><!-- /.container-fluid -->
+        </nav>
                 '''
         self._body = ''
         self._close = '''
@@ -25,15 +31,24 @@ class MainPage(Page):
     def __init__(self):
         super(MainPage, self).__init__()
         self._body = '''
-        <div class="container">
-            <img src="home-img.jpg" class="img-responsive" alt="Responsive image">
-            <ul class="nav nav-pills nav-stacked">
-                <li role="presentation"><a href="?country=China&capital=Beijing&currency=Renminbi&gdp=9.24%20trillion&population=1.34%20billion" class="button button-default">China</a></li>
-                <li role="presentation"><a href="?country=India&capital=New%20Delhi&currency=Rupee&gdp=1.88%20trillion&population=1.25%20billion" class="button button-default">India</a></li>
-                <li role="presentation"><a href="?country=United%20States&capital=Washington%20DC&currency=Dollar&gdp=16.77%20trillion&population=318.9%20million" class="button button-default">United States</a></li>
-                <li role="presentation"><a href="?country=Indonesia&capital=Jakarta&currency=Rupiah&gdp=868.3%20billion&population=249.9%20million" class="button button-default">Indonesia</a></li>
-                <li role="presentation"><a href="?country=Brazil&capital=Brasilia&currency=Real&gdp=2.25%20trillion&population=200.4%20million" class="button button-default">China</a></li>
-            </ul>
+        <div class="row my-row">
+            <div class="col-xs-12 col-md-offset-2 col-md-4 col-lg-3">
+            <div class="my-container list-group">
+                <a class="btn btn-lg btn-default list-group-item" href="?country=China&capital=Beijing&currency=Renminbi&gdp=9.24%20trillion&population=1.34%20billion" class="button button-default">China</a>
+                <a class="btn btn-lg btn-default list-group-item" href="?country=India&capital=New%20Delhi&currency=Rupee&gdp=1.88%20trillion&population=1.25%20billion" class="button button-default">India</a>
+                <a class="btn btn-lg btn-default list-group-item" href="?country=United%20States&capital=Washington%20DC&currency=Dollar&gdp=16.77%20trillion&population=318.9%20million" class="button button-default">United States</a>
+                <a class="btn btn-lg btn-default list-group-item" href="?country=Indonesia&capital=Jakarta&currency=Rupiah&gdp=868.3%20billion&population=249.9%20million" class="button button-default">Indonesia</a>
+                <a class="btn btn-lg btn-default list-group-item" href="?country=Brazil&capital=Brasilia&currency=Real&gdp=2.25%20trillion&population=200.4%20million" class="button button-default">Brazil</a>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="jumbotron">
+                    <h2>Photo Credit</h2>
+                    <p>Thank you to <a href="https://www.flickr.com/photos/teegardin/6093690339">Ken Teegardin</a><p>
+                </div>
+            </div>
         </div>
         '''
 
@@ -97,19 +112,19 @@ class FinalView(Page):
         <div class="list-group">
             <div class='list-group-item'>
                 <h2 class="list-group-item-heading">Captial:</h2>
-                <p class="list-group-item-text">{self.capital}</p>
+                <p class="list-group-item-text text-danger ">{self.capital}</p>
             </div>
             <div class='list-group-item'>
                 <h2 class="list-group-item-heading">Currency:</h2>
-                <p class="list-group-item-text">{self.currency}</p>
+                <p class="list-group-item-text text-danger ">{self.currency}</p>
             </div>
             <div class='list-group-item'>
                 <h2 class="list-group-item-heading">Gross Domestic Product:</h2>
-                <p class="list-group-item-text">{self.gdp}</p>
+                <p class="list-group-item-text text-danger ">{self.gdp}</p>
             </div>
             <div class='list-group-item'>
                 <h2 class="list-group-item-heading">Population:</h2>
-                <p class="list-group-item-text">{self.population}</p>
+                <p class="list-group-item-text text-danger ">{self.population}</p>
             </div>
         </div>
         <a href="/">Take Me Back</a>

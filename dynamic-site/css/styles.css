@@ -1,0 +1,31 @@
+.navbar {
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+}
+.my-row {
+    margin: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.my-container {
+    margin-top: 150px;
+}
+body {
+    background: url(/img/home-img.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+    padding: 15px;
+    margin-top: 65px;
+}
+.list-group-item {
+    margin-bottom: 50px;
+}
+
+.list-group-item-text {
+    font-weight: bold;
+}
