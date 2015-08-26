@@ -29,3 +29,7 @@ body {
 .list-group-item-text {
     font-weight: bold;
 }
+
+.home {
+    color: white;
+}

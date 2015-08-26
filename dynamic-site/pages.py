@@ -17,6 +17,14 @@ class Page(object):
                 '''
         self._body = ''
         self._close = '''
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="jumbotron">
+                    <h2>Photo Credit</h2>
+                    <p>Thank you to <a href="https://www.flickr.com/photos/teegardin/6093690339">Ken Teegardin</a><p>
+                </div>
+            </div>
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
     </body>
@@ -40,14 +48,6 @@ class MainPage(Page):
                 <a class="btn btn-lg btn-default list-group-item" href="?country=Indonesia&capital=Jakarta&currency=Rupiah&gdp=868.3%20billion&population=249.9%20million" class="button button-default">Indonesia</a>
                 <a class="btn btn-lg btn-default list-group-item" href="?country=Brazil&capital=Brasilia&currency=Real&gdp=2.25%20trillion&population=200.4%20million" class="button button-default">Brazil</a>
             </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="jumbotron">
-                    <h2>Photo Credit</h2>
-                    <p>Thank you to <a href="https://www.flickr.com/photos/teegardin/6093690339">Ken Teegardin</a><p>
-                </div>
             </div>
         </div>
         '''
@@ -127,7 +127,7 @@ class FinalView(Page):
                 <p class="list-group-item-text text-danger ">{self.population}</p>
             </div>
         </div>
-        <a href="/">Take Me Back</a>
+        <a class="home" href="/">Take Me Back</a>
         </div>
         '''
 
