@@ -24,70 +24,15 @@ class MainPage(Page):
     def __init__(self):
         super(MainPage, self).__init__()
         self._body = '''
-        <form class="form-horizontal">
-<fieldset>
-
-<!-- Form Name -->
-<legend>Form Name</legend>
-
-<!-- Button -->
-<div class="form-group">
-  <div class="col-md-4">
-    <button id="distance_view" name="distance_view" class="btn btn-primary">Distance</button>
-  </div>
-</div>
-
-<!-- Button -->
-<div class="form-group">
-  <div class="col-md-4">
-    <button id="weight_view" name="weight_view" class="btn btn-primary">Weight</button>
-  </div>
-</div>
-
-<!-- Button -->
-<div class="form-group">
-  <div class="col-md-4">
-    <button id="volume_view" name="volume_view" class="btn btn-primary">Volume</button>
-  </div>
-</div>
-
-<!-- Button -->
-<div class="form-group">
-  <div class="col-md-4">
-    <button id="temperature_view" name="temperature_view" class="btn btn-primary">Temperature</button>
-  </div>
-</div>
-
-<!-- Button -->
-<div class="form-group">
-  <div class="col-md-4">
-    <button id="speed_view" name="speed_view" class="btn btn-primary">Speed</button>
-  </div>
-</div>
-
-</fieldset>
-</form>
+        <a href="?country=China&captial=Beijing&currency=Renminbi&gdp=9.24%20trillion&population=1.34%20billion" class="button button-default">China</a>
+        <a href="?country=India&captial=New%20Delhi&currency=Rupee&gdp=1.88%20trillion&population=1.25%20billion" class="button button-default">India</a>
+        <a href="?country=United%20States&captial=Washington%20DC&currency=Dollar&gdp=16.77%20trillion&population=318.9%20million" class="button button-default">United States</a>
+        <a href="?country=Indonesia&captial=Jakarta&currency=Rupiah&gdp=868.3%20billion&population=249.9%20million" class="button button-default">Indonesia</a>
+        <a href="?country=Brazil&captial=Brasilia&currency=Real&gdp=2.25%20trillion&population=200.4%20million" class="button button-default">China</a>
         '''
 
     def print_out(self):
         return self._open + self._body + self._close
-
-
-class DistancePage(Page):
-    def __init__(self):
-        super(DistancePage, self).__init__()
-        self._open_form = '<form method="GET">'
-        self._close_form = '</form>'
-        self.__form_arr = []
-        self._form_inputs = ''
-
-    @property
-    def form_arr(self):
-        pass
-
-    @form_arr.setter
-    def form_arr(self, arr):
-        pass
 
 
 
