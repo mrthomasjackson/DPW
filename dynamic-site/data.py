@@ -1,3 +1,4 @@
+# create parent class to hold data
 class Data(object):
     def __init__(self):
         self._country = ''
@@ -6,6 +7,7 @@ class Data(object):
         self._gdp = ''
         self._population = ''
 
+    # create getter and setter for data attribute
     @property
     def country(self):
         return self._country
@@ -14,6 +16,7 @@ class Data(object):
     def country(self, country):
         self._country = country
 
+    # create getter and setter for data attribute
     @property
     def capital(self):
         return self._capital
@@ -22,6 +25,7 @@ class Data(object):
     def capital(self, capital):
         self._capital = capital
 
+    # create getter and setter for data attribute
     @property
     def currency(self):
         return self._currency
@@ -30,6 +34,7 @@ class Data(object):
     def currency(self, currency):
         self._currency = currency
 
+    # create getter and setter for data attribute
     @property
     def gdp(self):
         return self._gdp
@@ -38,6 +43,7 @@ class Data(object):
     def gdp(self, gdp):
         self._gdp = gdp
 
+    # create getter and setter for data attribute
     @property
     def population(self):
         return self._population
@@ -47,6 +53,7 @@ class Data(object):
         self._population = population
 
 
+# create classes to hold data for particular countries
 class China(Data):
     def __init__(self):
         super(China, self).__init__()

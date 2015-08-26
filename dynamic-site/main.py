@@ -65,6 +65,7 @@ class MainHandler(webapp2.RequestHandler):
                 final_view.population = brazil.population
                 # write the view into the browser
                 self.response.write(final_view.print_out())
+        # if nothing in the URL... load default page
         else:
             self.response.write(main_page.print_out())
 
