@@ -112,6 +112,3 @@ class FinalView(Page):
         page = self._open + self._body + self._close
         page = page.format(**locals())
         return page
-
-
-
