@@ -26,7 +26,7 @@ class MainPage(Page):
         super(MainPage, self).__init__()
         self._body = '''
         <div class="container">
-            <div clas
+            <img src="home-img.jpg" class="img-responsive" alt="Responsive image">
             <ul class="nav nav-pills nav-stacked">
                 <li role="presentation"><a href="?country=China&capital=Beijing&currency=Renminbi&gdp=9.24%20trillion&population=1.34%20billion" class="button button-default">China</a></li>
                 <li role="presentation"><a href="?country=India&capital=New%20Delhi&currency=Rupee&gdp=1.88%20trillion&population=1.25%20billion" class="button button-default">India</a></li>
@@ -120,4 +120,3 @@ class FinalView(Page):
         page = self._open + self._body + self._close
         page = page.format(**locals())
         return page
-    
