@@ -71,7 +71,7 @@ class MainPage(Page):
 
     def print_out(self):
         return self._open + self._body + self._close
-    
+
 
 class DistancePage(Page):
     def __init__(self):

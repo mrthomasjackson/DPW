@@ -6,7 +6,7 @@ class MainHandler(webapp2.RequestHandler):
         mainPage = MainPage()
 
         if self.request.GET:
-            pass
+
         else:
             self.response.write(mainPage.print_out())
 
